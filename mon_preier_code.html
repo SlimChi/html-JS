@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>document.write("<h2>Mon 1er script</h2>")</script>
+<!-- un embryon de formulaire avec déjà du code JS événementiel -->
+<input type="button" value="Clic moi !" onclick="alert('Hello');">
+<p>Rien à ajouter !</p>
+<script src="/js/Mon_1er_code.js"></script>
+
+<script src="js/Laportee.js"></script>
+<script>
+
+  function perimetre() {
+    var resultat = 0;
+    // test si au moins un paramètre reçu
+    if (arguments.length == 0) resultat = "erreur";
+    else if (arguments.length == 1) resultat = 4*largeur; // 1 param recu : carré
+    else if (arguments.length == 2)
+      resultat = (largeur + longueur)*2; // 2 param : rectangle
+    else {
+      for (i in arguments) resultat += arguments[i]; // polygone
+    }
+
+    console.log(resultat);
+  }
+  perimetre(); // affiche 0
+  perimetre(5); // affiche 20
+  perimetre(9,6); // affiche 30
+  perimetre(3,3,3);
+  perimetre(3,7,20,8); // affiche 38
+
+</script>
+
+
+
+</body>
+</html>
