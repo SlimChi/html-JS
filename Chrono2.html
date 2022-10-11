@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <script src="js/chronoJs.js"></script>
+  <link rel="stylesheet" href="css/chrono.css">
 </head>
 <body>
-
-<span id="chronotime">0:00:00</span>
+<div class="chrono">
+<span id="chronotime" class="chronometre">0:00:00</span>
 <form name="chronoForm">
-  <input type="button" name="startstop" value="start!" onClick="chronoStart()" />
-  <input type="button" name="reset" value="reset!" onClick="chronoReset()" />
+  <input type="button" class="btn" name="startstop" value="start" onClick="chronoStart()" />
+  <input type="button" class="btn" name="reset" value="reset" onClick="chronoReset()" />
 </form>
+</div>
+
 </body>
 </html>

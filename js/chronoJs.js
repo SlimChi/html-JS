@@ -26,7 +26,7 @@ function chrono() {
 }
 
 function chronoStart() {
-  document.chronoForm.startstop.value = "stop!";
+  document.chronoForm.startstop.value = "stop";
   document.chronoForm.startstop.onclick = chronoStop;
   document.chronoForm.reset.onclick = chronoReset;
   start = new Date();
@@ -34,7 +34,7 @@ function chronoStart() {
 }
 
 function chronoContinue() {
-  document.chronoForm.startstop.value = "stop!";
+  document.chronoForm.startstop.value = "stop";
   document.chronoForm.startstop.onclick = chronoStop;
   document.chronoForm.reset.onclick = chronoReset;
   start = new Date() - diff;
@@ -53,7 +53,7 @@ function chronoStopReset() {
 }
 
 function chronoStop() {
-  document.chronoForm.startstop.value = "start!";
+  document.chronoForm.startstop.value = "start";
   document.chronoForm.startstop.onclick = chronoContinue;
   document.chronoForm.reset.onclick = chronoStopReset;
   clearTimeout(timerID);

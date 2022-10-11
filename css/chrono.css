@@ -1,12 +1,13 @@
 
-.chronometre {
+.chrono {
   margin: auto;
   width: 300px;
   text-align: center;
 
+
 }
 
-.tim {
+.chronometre {
   margin: auto;
   width: 300px;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -14,18 +15,20 @@
   text-align: center;
   font-size: 1.5em;
   font-family: digital;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
 
 
 }
 
-button {
+.btn {
   background: #3498db;
   color: #fff;
   width: 70px;
   border-radius: 5px;
   line-height: 1.5em;
-  border: none
+  border: none;
+  margin-top: 15px;
 }
 
 
